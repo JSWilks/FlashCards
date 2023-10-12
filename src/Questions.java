@@ -1,15 +1,31 @@
 import java.util.ArrayList;
 
-public class Glossary {
+public class Questions {
+    private String q;
+    private String a;
+    
+    /**
+     * Each question consists of a question and answer
+     * @param q
+     * @param a
+     */
+    
+    public Questions(String q, String a) {
+        this.q = q;
+        this.a = a;
+    }
 
-    public void questions() {
+    public String getQ() {
+        return q;
+    }
 
-        ArrayList<questions> glossary = new ArrayList<String[]>();
+    public String getA() {
+        return a;
+    }
 
+    
 
-
-            glossary.add(0, ["Q) Is Java platform independent?"]);
-                /*
+    /*
                  * "Q) Is Java platform independent?",
                  * "A) Yes, Java runs the same code on different platforms.",
                  * 
@@ -140,8 +156,5 @@ public class Glossary {
                  * the program.
                  * An error is something that is beyond the ability of the code to account for."
                  */
-
-        };
-
-    }
-
+    
+}
